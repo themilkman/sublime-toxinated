@@ -1,6 +1,6 @@
 {
-    "name": "Toxin",
-    "author": "p3lim",
+    "name": "Toxinated",
+    "author": "p3lim, themilkman",
     "variables":
     {
         "black": "#000000",
@@ -30,12 +30,14 @@
         "yellow2": "#b8cd44",
         "yellow3": "#8fbe00",
         "yellow4": "#a7da1e",
-        "yellow5": "#a6e22e"
+        "yellow5": "#a6e22e",
+        "mariana_blue3": "hsl(210, 15%, 22%)",
     },
     "globals":
     {
         "foreground": "var(white2)",
-        "background": "var(grey4)",
+        // use background color of mariana scheme
+        "background": "var(mariana_blue3)",
         "caret": "var(white3)",
         "invisibles": "var(grey5)",
         "line_highlight": "var(grey3)",
@@ -93,22 +95,48 @@
             "foreground": "var(yellow2)"
         },
         {
+            // highlights only class and def, not end in ruby
             "name": "Storage type",
             "scope": "storage.type",
             "foreground": "var(cyan4)"
         },
         {
+            // highlight "end" of block
+            "name": "Block end",
+            "scope": "keyword.control.block",
+            "foreground": "var(cyan4)"
+        },
+        {
+            // highlights |foo| pipes
+            "name": "Block parameter brackets",
+            "scope": "punctuation.definition.parameters.begin, punctuation.definition.parameters.end",
+            "foreground": "var(cyan4)"
+        },
+        {
+            // make parameters italic
+            "name": "italic parameters",
+            "scope": "variable.parameter.ruby",
+            "foreground": "var(red3)",
+            "font_style": "italic"
+        },
+        {
             "name": "Class name",
             "scope": "entity.name.class",
-            "foreground": "var(yellow2)"
+            "foreground": "var(yellow2)",
+            // make class names bold
+            "font_style": "bold"
         },
         {
             "name": "Inherited class",
             "scope": "entity.other.inherited-class",
-            "foreground": "var(yellow2)"
+            "foreground": "var(yellow2)",
+            // make class names bold
+            "font_style": "bold"
         },
         {
             "name": "Function name",
+            // make function names italic
+            "font_style": "italic",
             "scope": "entity.name.function",
             "foreground": "var(orange3)"
         },
