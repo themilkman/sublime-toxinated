@@ -113,6 +113,17 @@
             "foreground": "var(cyan4)"
         },
         {
+            // highlights "rescue"
+            "name": "Exception rescue",
+            "scope": "keyword.control.exception.rescue, keyword.control.exception.ensure",
+            "foreground": "var(cyan4)"
+        },
+        {
+            "name": "Conditionals and Loops",
+            "scope": "keyword.control.conditional, keyword.control.loop",
+            "foreground": "var(cyan4)"
+        },
+        {
             // make parameters italic
             "name": "italic parameters",
             "scope": "variable.parameter.ruby",
