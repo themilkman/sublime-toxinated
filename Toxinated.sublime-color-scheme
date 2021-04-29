@@ -348,6 +348,12 @@
             "foreground": "var(orange)"
         },
         {
+            "name": "Rails (Ruby) functions",
+            "scope": "source.ruby.rails support.function.activerecord, source.ruby.rails support.function.actionpack",
+            "foreground": "var(white3)",
+            "font_style": "italic"
+        },
+        {
             "name": "CSS Class",
             "scope": "entity.other.attribute-name.class.css",
             "foreground": "var(orange3)"
