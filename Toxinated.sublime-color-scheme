@@ -38,7 +38,7 @@
         "foreground": "var(white2)",
         // use background color of mariana scheme
         "background": "var(mariana_blue3)",
-        "caret": "var(white3)",
+        "caret": "var(orange)",
         "invisibles": "var(grey5)",
         "line_highlight": "var(grey3)",
         "selection": "var(cyan3)",
